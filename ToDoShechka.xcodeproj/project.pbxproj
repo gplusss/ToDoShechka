@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		407CEE681E7C124900857EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407CEE671E7C124900857EBD /* AppDelegate.swift */; };
+		407CEE6A1E7C124900857EBD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407CEE691E7C124900857EBD /* LoginViewController.swift */; };
+		407CEE6F1E7C124900857EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407CEE6E1E7C124900857EBD /* Assets.xcassets */; };
+		407CEE721E7C124900857EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407CEE701E7C124900857EBD /* LaunchScreen.storyboard */; };
+		407CEE7A1E7C319500857EBD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 407CEE791E7C319500857EBD /* GoogleService-Info.plist */; };
+		40BB62211E7EA86900F1636B /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB62201E7EA86900F1636B /* TasksViewController.swift */; };
+		40BB62251E7EB86B00F1636B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BB62241E7EB86B00F1636B /* Main.storyboard */; };
+		40BB62271E7ED16400F1636B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB62261E7ED16400F1636B /* Task.swift */; };
+		40BB62291E7ED16E00F1636B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB62281E7ED16E00F1636B /* User.swift */; };
+		680EC7696D5C65BD24E8894E /* Pods_ToDoShechka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D18FF71050FD174B04784D /* Pods_ToDoShechka.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		407CEE641E7C124900857EBD /* ToDoShechka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoShechka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		407CEE671E7C124900857EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		407CEE691E7C124900857EBD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		407CEE6E1E7C124900857EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		407CEE711E7C124900857EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		407CEE731E7C124900857EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407CEE791E7C319500857EBD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		40BB62201E7EA86900F1636B /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		40BB62241E7EB86B00F1636B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		40BB62261E7ED16400F1636B /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		40BB62281E7ED16E00F1636B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		42D18FF71050FD174B04784D /* Pods_ToDoShechka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoShechka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A27DB0C326343DD5511CA8D /* Pods-ToDoShechka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoShechka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoShechka/Pods-ToDoShechka.debug.xcconfig"; sourceTree = "<group>"; };
+		C72AD0B8C2E51D843F1CE66A /* Pods-ToDoShechka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoShechka.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoShechka/Pods-ToDoShechka.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		407CEE611E7C124800857EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680EC7696D5C65BD24E8894E /* Pods_ToDoShechka.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39D7364BFB351AAD49692BC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A27DB0C326343DD5511CA8D /* Pods-ToDoShechka.debug.xcconfig */,
+				C72AD0B8C2E51D843F1CE66A /* Pods-ToDoShechka.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		407CEE5B1E7C124800857EBD = {
+			isa = PBXGroup;
+			children = (
+				407CEE661E7C124900857EBD /* ToDoShechka */,
+				407CEE651E7C124900857EBD /* Products */,
+				39D7364BFB351AAD49692BC7 /* Pods */,
+				7AF9748DDC5E5793BC8BA7CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		407CEE651E7C124900857EBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				407CEE641E7C124900857EBD /* ToDoShechka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		407CEE661E7C124900857EBD /* ToDoShechka */ = {
+			isa = PBXGroup;
+			children = (
+				40BB622A1E7ED18600F1636B /* Models */,
+				40BB62231E7EA8DC00F1636B /* Controllers */,
+				40BB62221E7EA8AC00F1636B /* Supporting files */,
+			);
+			path = ToDoShechka;
+			sourceTree = "<group>";
+		};
+		40BB62221E7EA8AC00F1636B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				407CEE671E7C124900857EBD /* AppDelegate.swift */,
+				407CEE6E1E7C124900857EBD /* Assets.xcassets */,
+				407CEE701E7C124900857EBD /* LaunchScreen.storyboard */,
+				40BB62241E7EB86B00F1636B /* Main.storyboard */,
+				407CEE731E7C124900857EBD /* Info.plist */,
+				407CEE791E7C319500857EBD /* GoogleService-Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		40BB62231E7EA8DC00F1636B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				407CEE691E7C124900857EBD /* LoginViewController.swift */,
+				40BB62201E7EA86900F1636B /* TasksViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		40BB622A1E7ED18600F1636B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				40BB62261E7ED16400F1636B /* Task.swift */,
+				40BB62281E7ED16E00F1636B /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7AF9748DDC5E5793BC8BA7CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42D18FF71050FD174B04784D /* Pods_ToDoShechka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		407CEE631E7C124800857EBD /* ToDoShechka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 407CEE761E7C124900857EBD /* Build configuration list for PBXNativeTarget "ToDoShechka" */;
+			buildPhases = (
+				8B1D0CB7AEDB435B3C488E99 /* [CP] Check Pods Manifest.lock */,
+				407CEE601E7C124800857EBD /* Sources */,
+				407CEE611E7C124800857EBD /* Frameworks */,
+				407CEE621E7C124800857EBD /* Resources */,
+				B0AB9B97095BAD1AB4512BA2 /* [CP] Embed Pods Frameworks */,
+				531DBBEEA8E8F0A0490FE26E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToDoShechka;
+			productName = ToDoShechka;
+			productReference = 407CEE641E7C124900857EBD /* ToDoShechka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		407CEE5C1E7C124800857EBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Vladimir Saprykin";
+				TargetAttributes = {
+					407CEE631E7C124800857EBD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D679G69XAU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 407CEE5F1E7C124800857EBD /* Build configuration list for PBXProject "ToDoShechka" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 407CEE5B1E7C124800857EBD;
+			productRefGroup = 407CEE651E7C124900857EBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				407CEE631E7C124800857EBD /* ToDoShechka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		407CEE621E7C124800857EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407CEE721E7C124900857EBD /* LaunchScreen.storyboard in Resources */,
+				407CEE6F1E7C124900857EBD /* Assets.xcassets in Resources */,
+				407CEE7A1E7C319500857EBD /* GoogleService-Info.plist in Resources */,
+				40BB62251E7EB86B00F1636B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		531DBBEEA8E8F0A0490FE26E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDoShechka/Pods-ToDoShechka-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B1D0CB7AEDB435B3C488E99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0AB9B97095BAD1AB4512BA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDoShechka/Pods-ToDoShechka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		407CEE601E7C124800857EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BB62271E7ED16400F1636B /* Task.swift in Sources */,
+				407CEE6A1E7C124900857EBD /* LoginViewController.swift in Sources */,
+				407CEE681E7C124900857EBD /* AppDelegate.swift in Sources */,
+				40BB62291E7ED16E00F1636B /* User.swift in Sources */,
+				40BB62211E7EA86900F1636B /* TasksViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		407CEE701E7C124900857EBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				407CEE711E7C124900857EBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		407CEE741E7C124900857EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		407CEE751E7C124900857EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		407CEE771E7C124900857EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A27DB0C326343DD5511CA8D /* Pods-ToDoShechka.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D679G69XAU;
+				INFOPLIST_FILE = ToDoShechka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = todoshechka.com.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		407CEE781E7C124900857EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C72AD0B8C2E51D843F1CE66A /* Pods-ToDoShechka.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D679G69XAU;
+				INFOPLIST_FILE = ToDoShechka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = todoshechka.com.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		407CEE5F1E7C124800857EBD /* Build configuration list for PBXProject "ToDoShechka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407CEE741E7C124900857EBD /* Debug */,
+				407CEE751E7C124900857EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		407CEE761E7C124900857EBD /* Build configuration list for PBXNativeTarget "ToDoShechka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407CEE771E7C124900857EBD /* Debug */,
+				407CEE781E7C124900857EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 407CEE5C1E7C124800857EBD /* Project object */;
+}
