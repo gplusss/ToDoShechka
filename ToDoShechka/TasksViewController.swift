@@ -16,6 +16,10 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var tasks = Array<Task>()
 
     @IBOutlet weak var tableView: UITableView!
+    @IBAction func showDetailButton(_ sender: UIBarButtonItem) {
+        
+        performSegue(withIdentifier: "showDetail", sender: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,8 +91,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         } catch {
             print (error.localizedDescription)
         }
-        dismiss(animated: true, completion: nil) 
-        
+        dismiss(animated: true, completion: nil)
         
     }
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
