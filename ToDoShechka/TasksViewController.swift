@@ -93,6 +93,8 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
         
+        performSegue(withIdentifier: "showDetail", sender: UIBarButtonItem.self)
+        
         let alertController = UIAlertController(title: "New Task", message: "Add new task" , preferredStyle: .alert)
         alertController.addTextField()
         let save = UIAlertAction(title: "Save", style: .default) { [weak self] _ in
@@ -108,9 +110,6 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         alertController.addAction(cancel)
         
         present(alertController, animated: true, completion: nil) 
-        
-        
-        
         
     }
 }
