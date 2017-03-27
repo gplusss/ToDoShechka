@@ -93,7 +93,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
         
-        performSegue(withIdentifier: "showDetail", sender: UIBarButtonItem.self)
+        //performSegue(withIdentifier: "showDetail", sender: UIBarButtonItem.self)
         
         let alertController = UIAlertController(title: "New Task", message: "Add new task" , preferredStyle: .alert)
         alertController.addTextField()
