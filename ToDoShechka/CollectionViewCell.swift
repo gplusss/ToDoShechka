@@ -8,8 +8,9 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class PostCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imageCell: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
+    
     
 }
