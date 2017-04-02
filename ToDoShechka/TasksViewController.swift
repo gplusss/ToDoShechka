@@ -16,6 +16,10 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var tasks = Array<Task>()
 
     @IBOutlet weak var tableView: UITableView!
+//    @IBAction func showDetailButton(_ sender: UIBarButtonItem) {
+//
+//        performSegue(withIdentifier: "showDetail", sender: nil)
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,29 +91,26 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         } catch {
             print (error.localizedDescription)
         }
-        dismiss(animated: true, completion: nil) 
-        
+        dismiss(animated: true, completion: nil)
         
     }
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
-        
-        //performSegue(withIdentifier: "showDetail", sender: UIBarButtonItem.self)
-        
-        let alertController = UIAlertController(title: "New Task", message: "Add new task" , preferredStyle: .alert)
-        alertController.addTextField()
-        let save = UIAlertAction(title: "Save", style: .default) { [weak self] _ in
-            guard let textField = alertController.textFields?.first, textField.text != "" else { return }
-            
-             let task = Task(title: textField.text!, userId: (self?.user.uid)!)
-             let taskRef = self?.ref.child(task.title.lowercased())
-            taskRef?.setValue(task.convertToDictionary())
-        }
-        
-        let cancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
-        alertController.addAction(save)
-        alertController.addAction(cancel)
-        
-        present(alertController, animated: true, completion: nil) 
+        performSegue(withIdentifier: "showDetail", sender: nil)
+//        let alertController = UIAlertController(title: "New Task", message: "Add new task" , preferredStyle: .alert)
+//        alertController.addTextField()
+//        let save = UIAlertAction(title: "Save", style: .default) { [weak self] _ in
+//            guard let textField = alertController.textFields?.first, textField.text != "" else { return }
+//            
+//             let task = Task(title: textField.text!, userId: (self?.user.uid)!)
+//             let taskRef = self?.ref.child(task.title.lowercased())
+//            taskRef?.setValue(task.convertToDictionary())
+//        }
+//        
+//        let cancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+//        alertController.addAction(save)
+//        alertController.addAction(cancel)
+//        
+//        present(alertController, animated: true, completion: nil) 
         
     }
 }

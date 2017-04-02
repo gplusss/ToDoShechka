@@ -12,6 +12,8 @@
 		407CEE6F1E7C124900857EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407CEE6E1E7C124900857EBD /* Assets.xcassets */; };
 		407CEE721E7C124900857EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407CEE701E7C124900857EBD /* LaunchScreen.storyboard */; };
 		407CEE7A1E7C319500857EBD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 407CEE791E7C319500857EBD /* GoogleService-Info.plist */; };
+		407DEC4B1E898DD300EC8E70 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407DEC4A1E898DD300EC8E70 /* CollectionViewCell.swift */; };
+		407DEC4D1E898E0600EC8E70 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407DEC4C1E898E0600EC8E70 /* CollectionViewController.swift */; };
 		40BB62211E7EA86900F1636B /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB62201E7EA86900F1636B /* TasksViewController.swift */; };
 		40BB62251E7EB86B00F1636B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BB62241E7EB86B00F1636B /* Main.storyboard */; };
 		40BB62271E7ED16400F1636B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB62261E7ED16400F1636B /* Task.swift */; };
@@ -27,6 +29,8 @@
 		407CEE711E7C124900857EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		407CEE731E7C124900857EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		407CEE791E7C319500857EBD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		407DEC4A1E898DD300EC8E70 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		407DEC4C1E898E0600EC8E70 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		40BB62201E7EA86900F1636B /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		40BB62241E7EB86B00F1636B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		40BB62261E7ED16400F1636B /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 			children = (
 				407CEE691E7C124900857EBD /* LoginViewController.swift */,
 				40BB62201E7EA86900F1636B /* TasksViewController.swift */,
+				407DEC4C1E898E0600EC8E70 /* CollectionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			children = (
 				40BB62261E7ED16400F1636B /* Task.swift */,
 				40BB62281E7ED16E00F1636B /* User.swift */,
+				407DEC4A1E898DD300EC8E70 /* CollectionViewCell.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -251,7 +257,9 @@
 			files = (
 				40BB62271E7ED16400F1636B /* Task.swift in Sources */,
 				407CEE6A1E7C124900857EBD /* LoginViewController.swift in Sources */,
+				407DEC4B1E898DD300EC8E70 /* CollectionViewCell.swift in Sources */,
 				407CEE681E7C124900857EBD /* AppDelegate.swift in Sources */,
+				407DEC4D1E898E0600EC8E70 /* CollectionViewController.swift in Sources */,
 				40BB62291E7ED16E00F1636B /* User.swift in Sources */,
 				40BB62211E7EA86900F1636B /* TasksViewController.swift in Sources */,
 			);
